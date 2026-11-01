@@ -1,0 +1,33 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101820">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="VIDEO STREAMER" android:textColor="#FFFFFF" android:textSize="25sp"
+            android:textStyle="bold" android:paddingBottom="12dp"/>
+        <com.pedro.library.view.OpenGlView
+            android:id="@+id/preview" android:layout_width="match_parent"
+            android:layout_height="190dp" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="OFFLINE"
+            android:textColor="#FF7777" android:textStyle="bold" android:textSize="18sp"
+            android:padding="10dp"/>
+        <Button android:id="@+id/selectVideo" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="ВЫБРАТЬ ВИДЕО"/>
+        <TextView android:id="@+id/fileName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Файл не выбран"
+            android:textColor="#FFFFFF" android:padding="8dp"/>
+        <EditText android:id="@+id/rtmpUrl" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Полный RTMP URL (сервер + ключ)"
+            android:inputType="textUri" android:singleLine="true"
+            android:textColor="#FFFFFF" android:textColorHint="#BBBBBB"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Видео: исходное разрешение • AAC 160 kbps • без повтора"
+            android:textColor="#FFFFFF" android:padding="10dp"/>
+        <Button android:id="@+id/start" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="START"/>
+        <Button android:id="@+id/stop" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="STOP"/>
+    </LinearLayout>
+</ScrollView>
